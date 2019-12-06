@@ -1,4 +1,4 @@
-# pro-ui
+# ex-pro-ui
 
 ## Project setup
 ```
