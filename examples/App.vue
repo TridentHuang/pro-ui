@@ -3,7 +3,7 @@
         <pro-header/>
         <div class="container">
             <left-nav/>
-            <router-view/>
+            <router-view class="content-detail"/>
         </div>
     </div>
 </template>
@@ -33,33 +33,11 @@
 
     .container {
         display: flex;
-        flex-wrap: nowrap;
-
     }
 
-    .bg-block {
-        background-color: white;
-    }
-
-    .detail {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .example-container {
-        width: 360px;
-        height: 640px;
-        margin: 20px;
-    }
-
-    .content-container {
-        min-width: 800px;
-        max-width: 980px;
-        min-height: 200px;
-    }
-
-    .wrapper {
-        margin: 20px auto;
+    .content-detail {
+        width: 98%;
+        margin: 10px;
     }
 
 </style>

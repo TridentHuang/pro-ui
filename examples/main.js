@@ -1,12 +1,12 @@
 import Vue from "vue";
 import App from "./App.vue";
-import ElementUi from "element-ui";
-import "element-ui/lib/theme-chalk/index.css";
 import ProUI from "../packages/index";
 import router from "./router";
+import ViewUI from "view-design";
+import "view-design/dist/styles/iview.css";
 
-Vue.use(ElementUi);
 Vue.use(ProUI);
+Vue.use(ViewUI);
 Vue.config.productionTip = false;
 
 new Vue({

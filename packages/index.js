@@ -1,7 +1,9 @@
 import test from "./test";
-import card from './card';
+import card from "./card";
+import table from "./table";
+import tip from "./tip";
 
-const components = [test,card];
+const components = [test, card, table, tip];
 const install = function(Vue) {
   if (install.installed) return;
   components.map(component => {

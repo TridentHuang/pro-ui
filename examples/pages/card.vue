@@ -1,9 +1,8 @@
 <template>
     <div class="detail">
         <div class="example-container bg-block">
-            <span style="position: relative">速度速度
-                <pro-tip content="hello"/>
-            </span>
+            <ex-title title="卡片"/>
+            <pro-card/>
         </div>
         <div class="content-container">
             <div class="wrapper bg-block">
@@ -14,10 +13,16 @@
 </template>
 
 <script>
+  import exTitle from "../components/exTitle";
+
   export default {
-    name: "des"
+    name: "card",
+    components: {
+      exTitle
+    }
   };
 </script>
 
 <style scoped>
+
 </style>

@@ -14,12 +14,14 @@
                 <div class="sub-title">
                     {{sub.title}}
                 </div>
-                <div class="left-nav-item"
-                     v-for="item in sub.subDesList"
-                     :key="item.id" @click="itemActive(item.id)"
-                     :class="{active:item.id==ins}">
-                    {{item.name}}
-                </div>
+                <router-link :to="item.route" v-for="item in sub.subDesList" :key="item.id">
+                    <div class="left-nav-item"
+                         @click="itemActive(item.id)"
+                         :class="{active:item.id==ins}">
+                        {{item.name}}
+                    </div>
+                </router-link>
+
             </div>
 
         </div>
@@ -48,7 +50,8 @@
             id: "others",
             title: "Others 其他",
             subDesList: [
-              { id: "card", name: "Card 卡片" }
+              { id: "card", name: "Card 卡片", route: "/card" },
+              { id: "table", name: "基础表单页面", route: "/table" },
             ]
           }
         ]
@@ -67,6 +70,7 @@
     .left-nav-container {
         width: 220px;
         height: 100vh;
+        overflow:scroll;
     }
 
     .left-nav-wrapper {
